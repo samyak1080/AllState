@@ -1,0 +1,4 @@
+{"image": [
+{"folder_name": "Windshield", "image_name": "cracked-windshield.jpg", "path": "D:/AllState/Claims_PoC/auto_detection/images/cracked-windshield.jpg"},
+ {"folder_name": "CarDoor", "image_name": "iStock-168344842-min-1024x681.jpg", "path": "D:/AllState/Claims_PoC/auto_detection/images/iStock-168344842-min-1024x681.jpg"},
+ {"folder_name": "Windshield", "image_name": "windshield-crack-3-1536227311.jpg", "path": "D:/AllState/Claims_PoC/auto_detection/images/windshield-crack-3-1536227311.jpg"}], "output": [{"folders": ["Windshield", "CarDoor"]}]}

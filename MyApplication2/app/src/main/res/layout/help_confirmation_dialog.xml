@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+
+    android:padding="15dp"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/ic_car_accident"
+            android:textAlignment="center"
+            android:layout_toLeftOf="@id/dismiss"
+            android:text="ACCIDENT DETECTED!"
+            android:textColor="#d00000"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dismiss"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_dismiss"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+
+        android:text="Have you been in an accident?"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+
+        android:layout_marginTop="60dp"
+        android:paddingVertical="7dp"
+        android:layout_gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/help_yes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="7dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/hold_button_border"
+            android:paddingHorizontal="7dp"
+            android:paddingVertical="10dp"
+            android:text="Yes, I've been in an accident!"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/help_no"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center_vertical"
+            android:paddingVertical="10dp"
+            android:text="No, I'm Ok"
+
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>
+
+</android.support.v7.widget.CardView>

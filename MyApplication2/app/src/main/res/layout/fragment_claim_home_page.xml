@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ClaimHomePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+
+            android:background="@color/colorPrimaryDark"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+
+            android:background="#ffffff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/accident_detected_alert"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="10dp"
+
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@id/dismiss"
+                        android:drawableLeft="@drawable/ic_car_accident"
+                        android:text="ACCIDENT DETECTED !"
+                        android:textColor="#d00000"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/dismiss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_dismiss" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/ac_mesg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:text="Please resond within: " />
+
+                    <TextView
+                        android:id="@+id/auto_dismisal_timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@id/ac_mesg"
+                        android:gravity="center"
+                        android:text="2:00"
+                        android:textSize="20sp"
+
+                        />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/hold_button_border"
+                    android:paddingHorizontal="24dp"
+                    android:paddingVertical="10dp"
+                    android:text="HELP"
+                    android:id="@+id/help"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+
+            android:layout_marginHorizontal="10dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:orientation="vertical"
+
+                >
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textSize="20sp"
+
+                 android:drawableLeft="@drawable/ic_services"
+                 android:textAlignment="center"
+                 android:text="SERVICES"
+                 />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        android:paddingVertical="10dp"
+                        >
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/claims"
+                            android:paddingVertical="10dp"
+                            android:layout_margin="7dp"
+                            android:elevation="5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginVertical="8dp"
+                                android:drawableTop="@drawable/ic_claims"
+                                android:text="Claims"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                />
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/rental_car"
+                            android:layout_margin="7dp"
+                            android:elevation="5dp"
+
+                            android:paddingVertical="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="8dp"
+                                android:drawableTop="@drawable/ic_car_rental"
+                                android:text="Rental Car"
+                                android:layout_gravity="center"
+
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                />
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:weightSum="2">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/emergency_services"
+                            android:layout_margin="7dp"
+                            android:paddingVertical="10dp"
+                            android:elevation="5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:drawableTop="@drawable/ic_emergency_services"
+                                android:text="Emergency Services"
+                                android:textSize="20sp"
+                                android:layout_marginVertical="8dp"
+                                android:gravity="center"
+                                />
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/road_side_assistance"
+                            android:layout_margin="7dp"
+                            android:paddingVertical="10dp"
+                            android:elevation="5dp"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableTop="@drawable/ic_road_side_assistance"
+                                android:text="Roadside Assistance"
+                                android:layout_gravity="center"
+                                android:layout_marginVertical="8dp"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                />
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+
+            android:layout_marginHorizontal="10dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+
+                >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+
+                android:drawableLeft="@drawable/ic_emergency_call"
+                android:textAlignment="center"
+                android:text="EMERGENCY CONTACTS"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="17sp"
+                    android:text="Eva Taylor"
+                    android:layout_centerVertical="true"
+                    android:padding="7dp"
+                    android:layout_toLeftOf="@id/call_emergency_contact_1"
+
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/call_emergency_contact_1"
+                    android:src="@drawable/ic_call"
+                    android:paddingVertical="7dp"
+                    android:paddingHorizontal="15dp"
+                    android:layout_toLeftOf="@id/message_emergency_contact_1"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_message"
+                    android:paddingVertical="7dp"
+                    android:paddingHorizontal="15dp"
+                    android:id="@+id/message_emergency_contact_1"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="17sp"
+                        android:text="Ross Taylor"
+                        android:layout_centerVertical="true"
+                        android:padding="7dp"
+                        android:layout_toLeftOf="@id/call_emergency_contact_2"
+
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/call_emergency_contact_2"
+                        android:src="@drawable/ic_call"
+                        android:paddingVertical="7dp"
+                        android:paddingHorizontal="15dp"
+                        android:layout_toLeftOf="@id/message_emergency_contact_2"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_message"
+                        android:paddingVertical="7dp"
+                        android:paddingHorizontal="15dp"
+                        android:id="@+id/message_emergency_contact_2"
+                        android:layout_alignParentRight="true"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</RelativeLayout>

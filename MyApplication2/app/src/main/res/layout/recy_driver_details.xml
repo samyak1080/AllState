@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Driver 1 Details"
+
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:id="@+id/heading"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/collapsable"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_driver"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        />
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+                android:id="@+id/collapsable"
+              android:padding="7dp"
+              android:layout_centerVertical="true"
+              android:src="@drawable/ic_expand_more_24dp"
+            android:layout_alignParentRight="true"
+              />
+
+
+        </RelativeLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/collapsable_view"
+          android:orientation="vertical"
+          android:visibility="gone"
+          >
+
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:weightSum="2"
+         android:orientation="horizontal"
+         >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+         <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Driver Id:"
+         android:layout_marginTop="10dp"
+         />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="428-59-7371"
+            android:id="@+id/driver_id"
+            android:layout_marginTop="5dp"
+            android:textSize="17sp"
+            android:textColor="#444444"
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DL number:"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABCDE12345"
+            android:id="@+id/dl_number"
+            android:layout_marginTop="5dp"
+            android:textSize="17sp"
+            android:textColor="#444444"
+            />
+</LinearLayout>
+
+     </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver Name:"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark Taylor"
+            android:id="@+id/driver_name"
+            android:layout_marginTop="5dp"
+            android:textSize="17sp"
+            android:textColor="#444444"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOB:"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08/19/1964"
+            android:id="@+id/dob"
+            android:layout_marginTop="5dp"
+            android:textSize="17sp"
+            android:textColor="#444444"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address:"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123,Main Street,Florida,USA"
+            android:id="@+id/address"
+            android:layout_marginTop="5dp"
+            android:textSize="17sp"
+            android:textColor="#444444"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DL Issue Date:"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="08/19/1982"
+                    android:id="@+id/dl_issue_date"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17sp"
+                    android:textColor="#444444"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DL Expiry Date: "
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="08/19/2022"
+                    android:id="@+id/dl_expiry_date"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17sp"
+                    android:textColor="#444444"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
